@@ -10,7 +10,7 @@ function SearchBar({ onChange }) {
   };
 
   return (
-    <form className="SearchBar">
+    <div className="SearchBar">
       <input
         type="text"
         name="search"
@@ -28,7 +28,7 @@ function SearchBar({ onChange }) {
       >
         Search
       </button>
-    </form>
+    </div>
   );
 }
 
