@@ -1,0 +1,25 @@
+.Phonetics {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 48px;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      color: var(--black);
+      border-radius: 50%;
+      box-shadow: 0 0 8px 0 var(--shadow-black);
+      cursor: pointer;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+}

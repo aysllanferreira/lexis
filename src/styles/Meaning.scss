@@ -1,0 +1,35 @@
+.Meaning {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 32px;
+
+  div {
+    h2 {
+      margin-bottom: 16px;
+      font-size: 32px;
+    }
+
+    div {
+      p {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-weight: bold;
+          margin-bottom: 4px;
+        }
+        &:first-child {
+          margin-bottom: 16px;
+        }
+      }
+
+      hr {
+        height: 1px;
+        background-color: darken(#e9ecef, 10%);
+        border: none;
+        margin: 16px 0;
+      }
+    }
+  }
+}

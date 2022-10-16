@@ -1,0 +1,33 @@
+.SearchBar {
+  display: flex;
+  gap: 10px;
+
+  &__input {
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    color: var(--black);
+
+    &:focus {
+      outline: 3px solid var(--focus);
+    }
+  }
+
+  &__button {
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--primary-shade);
+    }
+
+    &:focus {
+      outline: 3px solid var(--focus);
+    }
+  }
+}

@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #e9ecef;
+  --black: #111111;
+
+  --primary: #845ef7;
+  --primary-shade: #6741d9;
+
+  --secondary: #cc5de8;
+  --secondary-shade: #ae3ec9;
+
+  --focus: #5c7cfa;
+  --shadow-white: #ffffff6b;
+  --shadow-black: #0000006b;
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 32px;
+}
+
+h1 {
+  font-size: 38px;
+  margin-bottom: 12px;
+  font-weight: 900;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+  font-family: sans-serif;
+}
