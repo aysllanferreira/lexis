@@ -17,7 +17,6 @@ function Phonetics(props) {
         {phonetics.map(({ text, audio }) => (
           <div key={Math.random()}>
             <p>{text}</p>
-
             {!audio ? null : (
               <GiSpeaker onClick={() => handleButtonClick(audio)} />
             )}

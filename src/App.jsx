@@ -4,6 +4,7 @@ import SearchBar from './components/SearchBar';
 import Phonetics from './components/Phonetics';
 import './App.css';
 import Meaning from './components/Meaning';
+import Error from './components/Error';
 
 function App() {
   const [result, setResult] = useState([]);
@@ -15,7 +16,10 @@ function App() {
   const getSearchTerm = (search) => {
     axios
       .get(`https://api.dictionaryapi.dev/api/v2/entries/en/${search}`)
-      .then((data) => setResult([data.data[0]]));
+      .then((data) => setResult([data.data[0]]))
+      .catch(({ response }) => {
+        if (response.status === 404) setResult(undefined);
+      });
   };
 
   return (
@@ -23,13 +27,17 @@ function App() {
       <SearchBar onChange={getSearchTerm} />
 
       <main>
-        {result.map((item) => (
-          <div key={item.word}>
-            <h1>{item.word}</h1>
-            <Phonetics phonetics={item.phonetics} />
-            <Meaning meanings={item.meanings} />
-          </div>
-        ))}
+        {!result ? (
+          <Error />
+        ) : (
+          result.map((item) => (
+            <div key={item.word}>
+              <h1>{item.word}</h1>
+              <Phonetics phonetics={item.phonetics} />
+              <Meaning meanings={item.meanings} />
+            </div>
+          ))
+        )}
       </main>
     </div>
   );
