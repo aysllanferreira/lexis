@@ -8,7 +8,9 @@ function Meaning(props) {
     <div className="Meaning">
       {meanings.map(({ partOfSpeech, definitions }) => (
         <div key={Math.random()}>
-          <h2>{partOfSpeech}</h2>
+          <h2>
+            {partOfSpeech.charAt(0).toUpperCase() + partOfSpeech.slice(1)}
+          </h2>
 
           {definitions.splice(0, 3).map(({ definition, example }) => (
             <div key={Math.random()}>

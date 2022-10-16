@@ -32,7 +32,7 @@ function App() {
         ) : (
           result.map((item) => (
             <div key={item.word}>
-              <h1>{item.word}</h1>
+              <h1>{item.word.charAt(0).toUpperCase() + item.word.slice(1)}</h1>
               <Phonetics phonetics={item.phonetics} />
               <Meaning meanings={item.meanings} />
             </div>
