@@ -6,8 +6,6 @@ To carry out the searches in the dictionary, the API we used was [Free Dictionar
 
 Made by: [Aysllan Ferreira](https://www.linkedin.com/in/aysllan-ferreira-61aa58228/) and [Pedro Silva](https://www.linkedin.com/in/opedrodev/).
 
-# Lexis Dictionary
-
-### DEMO:
+# DEMO
 
 ![Project Pixel Art](./demo_website.png)
