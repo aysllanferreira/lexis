@@ -11,7 +11,7 @@
   --secondary-shade: #ae3ec9;
 
   --focus: #5c7cfa;
-  --line: #cdd4db;
+  --shade: #cdd4db;
   --shadow-white: #ffffff6b;
   --shadow-black: #0000006b;
 }
@@ -28,7 +28,9 @@
   padding: 32px;
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
   row-gap: 32px;
+  position: relative;
 }
 
 h1 {

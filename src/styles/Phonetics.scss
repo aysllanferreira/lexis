@@ -12,10 +12,14 @@
     svg {
       width: 20px;
       height: 20px;
-      color: var(--black);
+      color: var(--primary);
       border-radius: 50%;
       box-shadow: 0 0 8px 0 var(--shadow-black);
       cursor: pointer;
+
+      &:hover {
+        color: var(--secondary);
+      }
     }
 
     p {

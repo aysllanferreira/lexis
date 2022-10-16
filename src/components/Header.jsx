@@ -20,8 +20,10 @@ function Header() {
   return (
     <header className="Header">
       <div>
-        <h1>Lexis</h1>
-        <p>Dictionary</p>
+        <h1>
+          Lexis
+          <sub>Dictionary</sub>
+        </h1>
       </div>
 
       <button type="button" onClick={toggle}>

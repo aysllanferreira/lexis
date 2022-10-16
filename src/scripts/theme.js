@@ -14,7 +14,7 @@ function darkMode() {
   root.style.setProperty('--white', BLACK);
   root.style.setProperty('--black', WHITE);
   root.style.setProperty('--shadow-black', SHADOW_WHITE);
-  root.style.setProperty('--line', LINE_BLACK);
+  root.style.setProperty('--shade', LINE_BLACK);
 }
 
 /**
@@ -24,7 +24,7 @@ function lightMode() {
   root.style.setProperty('--black', BLACK);
   root.style.setProperty('--white', WHITE);
   root.style.setProperty('--shadow-black', SHADOW_BLACK);
-  root.style.setProperty('--line', LINE_WHITE);
+  root.style.setProperty('--shade', LINE_WHITE);
 }
 
 /**

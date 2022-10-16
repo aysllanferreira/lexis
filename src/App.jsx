@@ -6,6 +6,7 @@ import './App.css';
 import Meaning from './components/Meaning';
 import Error from './components/Error';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   const [result, setResult] = useState([]);
@@ -41,6 +42,8 @@ function App() {
           ))
         )}
       </main>
+
+      <Footer />
     </div>
   );
 }
