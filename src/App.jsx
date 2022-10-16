@@ -5,6 +5,7 @@ import Phonetics from './components/Phonetics';
 import './App.css';
 import Meaning from './components/Meaning';
 import Error from './components/Error';
+import Header from './components/Header';
 
 function App() {
   const [result, setResult] = useState([]);
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <SearchBar onChange={getSearchTerm} />
 
       <main>

@@ -15,6 +15,7 @@ function SearchBar({ onChange }) {
         type="text"
         name="search"
         id="search"
+        placeholder="Search for a word..."
         className="SearchBar__input"
         onChange={({ target }) => {
           setSearch(target.value);

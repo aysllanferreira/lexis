@@ -1,13 +1,14 @@
 .SearchBar {
   display: flex;
   gap: 10px;
+  margin-bottom: 20px;
 
   &__input {
     padding: 8px 16px;
     border-radius: 10px;
     border: none;
     width: 100%;
-    color: var(--black);
+    color: #111111;
 
     &:focus {
       outline: 3px solid var(--focus);
@@ -19,7 +20,7 @@
     border-radius: 10px;
     border: none;
     background-color: var(--primary);
-    color: var(--white);
+    color: #e9ecef;
     cursor: pointer;
 
     &:hover {

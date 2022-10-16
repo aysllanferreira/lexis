@@ -1,8 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Gayathri&display=swap');
 
 :root {
   --white: #e9ecef;
@@ -15,8 +11,15 @@
   --secondary-shade: #ae3ec9;
 
   --focus: #5c7cfa;
+  --line: #cdd4db;
   --shadow-white: #ffffff6b;
   --shadow-black: #0000006b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .App {
@@ -37,5 +40,5 @@ h1 {
 body {
   background-color: var(--white);
   color: var(--black);
-  font-family: sans-serif;
+  font-family: 'Gayathri', sans-serif;
 }

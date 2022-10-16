@@ -26,7 +26,7 @@
 
       hr {
         height: 1px;
-        background-color: darken(#e9ecef, 10%);
+        background-color: var(--line);
         border: none;
         margin: 16px 0;
       }

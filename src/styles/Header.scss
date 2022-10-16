@@ -1,0 +1,26 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    p {
+      font-size: 22px;
+      font-weight: normal;
+    }
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    svg {
+      color: var(--black);
+      height: 22px;
+      width: 22px;
+    }
+  }
+}
